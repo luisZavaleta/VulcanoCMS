@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.vulcano-cms.guardar-webpage {
+	position: fixed;
+}
+
+.fileinput-preview.fileinput-exists.thumbnail img {
+	width: 100%;
+	height: 100%;
+}
