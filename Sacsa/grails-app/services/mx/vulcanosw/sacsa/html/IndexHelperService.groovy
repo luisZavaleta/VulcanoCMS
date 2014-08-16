@@ -158,15 +158,11 @@ class IndexHelperService {
 
 
 			data["prev"] = H5.findByWebpageIdAndSelector(prevWebpageId, ".sacsa-servicios-titulo")
-			println("prevWebpageId")
-			println(prevWebpageId)
 			data["prevPath"] = prevWebpageId
 
 
 			data["nxt"] = H5.findByWebpageIdAndSelector(nextWebpageId, ".sacsa-servicios-titulo")
 			data["nxtPath"] = nextWebpageId
-			println("nextWebpageId")
-			println(nextWebpageId)
 
 
 
@@ -293,8 +289,7 @@ class IndexHelperService {
 
 			def item = [:]
 			item["item"] = it
-			println("it")
-			println(it.id)
+
 			//item["image"] =  Div.findByWebpageIdAndSelectorAndParentId(webpageId, ".sacsa-equipo-item-imagen", it.id)
 			def imgx = Img.findByWebpageIdAndSelectorAndParentId(webpageId, ".sacsa-equipo-item-imagen", it.id)
 			webPageHelperService.setImageAbsolutePath(imgx)
@@ -361,7 +356,5 @@ class IndexHelperService {
 
 
 
-/*(921) 21 39487
- */
 
 

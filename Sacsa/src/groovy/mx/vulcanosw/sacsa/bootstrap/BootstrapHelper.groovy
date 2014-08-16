@@ -1,9 +1,28 @@
 package mx.vulcanosw.sacsa.bootstrap
 
 import mx.vulcanosw.cms.html.*
+import mx.vulcanosw.security.Rol
+import mx.vulcanosw.security.Usuario
+import mx.vulcanosw.security.UsuarioRol
+
 
 class BootstrapHelper {
 
+
+	def configUser(){
+
+		def adminRole = new Rol(authority: 'ROLE_ADMIN').save(flush: true) ;
+		def userRole = new Rol(authority: 'ROLE_USER').save(flush: true);
+
+		def testUser = new Usuario(username: 'sacsaadmin07', password: 'sacsapass49');
+		testUser.save(flush: true);
+
+		UsuarioRol.create testUser, adminRole, true
+
+		assert Usuario.count() == 1
+		assert Rol.count() == 2
+		assert UsuarioRol.count() == 1
+	}
 
 
 	def preloadHeader(){

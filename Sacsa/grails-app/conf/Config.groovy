@@ -222,44 +222,37 @@ grails.resources.modules = {
 
 
 
-
-
-
-
-	/*
-	 layoutjs {
-	 resource url:"js/jquery-2.0.3.min.js"
-	 resource url:"js/jquery-migrate-1.2.1.min.js"
-	 resource url:"js/bootstrap.min.js"
-	 resource url:"js/jquery.themepunch.revolution.min.js"
-	 resource url:"js/jquery.carouFredSel-6.2.1.js"
-	 resource url:"js/jquery.prettyPhoto.js"
-	 resource url:"js/jflickrfeed.min.js"
-	 resource url:"js/easing.js"
-	 resource url:"js/jquery.ui.totop.min.js"
-	 resource url:"js/jquery.isotope.min.js"
-	 resource url:"js/jquery.fitvids.js"
-	 resource url:"js/jasny-bootstrap.min.js"
-	 resource url:"js/vulcano-sacsa-custom.js"
-	 resource url:"js/html5shiv.js", wrapper: { s -> "<!--[if lt IE 9]>$s<![endif]-->" }
-	 resource url:"js/respond.min.js", wrapper: { s -> "<!--[if lt IE 9]>$s<![endif]-->" }
-	 }
-	 layoutadminjs {
-	 resource url:"js/cms/external/jasny-bootstrap.min.js"
-	 resource url:"js/cms/external/bootstrap-modalmanager.js"
-	 resource url:"js/cms/external/jasny-bootstrap.min.js"
-	 resource url:"js/cms/custom/index-structure.js"
-	 resource url:"js/cms/bin/structure-helper-1.5.0.js"
-	 resource url:"js/cms/bin/vulcano-cms-saveElements-1.5.0.js"
-	 resource url:"js/cms/bin/vulcano-cms-saveElements-helper-1.5.0.js"
-	 resource url:"js/cms/bin/vulcano-cms-1.5.0.js"
-	 resource url:"js/cms/bin/vulcano-cms-helper-1.5.0.js"
-	 resource url:"js/cms/external/jasny-bootstrap.min.js"
-	 resource url:"js/cms/external/bootstrap-modalmanager.js"
-	 resource url:"js/cms/external/bootstrap-modal.js"
-	 resource url:"js/cms/custom/index-structure.js"
-	 resource url:"js/cms/custom/index-main.js"
-	 }
-	 */
-
 }
+
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'mx.vulcanosw.security.Usuario'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'mx.vulcanosw.security.UsuarioRol'
+grails.plugin.springsecurity.authority.className = 'mx.vulcanosw.security.Rol'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+
+	'/servicio/*':                          ['permitAll'],
+	'/main/portafolio':                     ['permitAll'],
+	'/main/nosotros':                       ['permitAll'],
+	'/main/contacto':                  		['permitAll'],
+	'/main/empleo':                    		['permitAll'],
+	'/main/index':                          ['permitAll'],
+	'/main/contactoMail':                   ['permitAll'],
+	'/':                              		['permitAll'],
+//	'/main/index':                              		['permitAll'],
+//	'/main/index.gsp':                              	['permitAll'],
+//	'/vcalendar/getAvailableAppointments':				['permitAll'],
+//	'/vcalendar/createEvent':							['permitAll'],
+//	'/main/mail':										['permitAll'],
+//	'/main/mail2':										['permitAll'],
+//	'/':                              					['permitAll'],
+//	'/index':                         					['permitAll'],
+//	'/index.gsp':                     					['permitAll'],
+	'/**/js/**':                      					['permitAll'],
+	'/**/css/**':                     					['permitAll'],
+	'/**/images/**':                  					['permitAll'],
+	'/**/img/**':                  						['permitAll'],
+	'/**/favicon.ico':                					['permitAll'],
+	'/**': 												['ROLE_ADMIN']
+	]

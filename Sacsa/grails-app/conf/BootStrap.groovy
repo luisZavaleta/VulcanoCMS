@@ -12,6 +12,7 @@ class BootStrap {
 
 		BootstrapHelper helper= new BootstrapHelper()
 
+		helper.configUser()
 		helper.preloadHeader()
 		helper.preloadCarrusel()
 		helper.preloadService()

@@ -409,7 +409,7 @@ function getAllTexts(elements) {
 function getAllAttr(elements, type) {
 
 	var retArr = jQuery.map(elements, function(item, index) {
-	
+
 		return objectOrEmptyString($(item).attr(type))
 	})
 
@@ -910,11 +910,8 @@ function numericOrZero(a) {
 
 function addElement(params) {
 
-
 	var event = objectOrDefault(params.event, "click")
 	var elements = getElements(params.elements)
-
-
 
 	if (!empty(params.container)) {
 		elements = $(params.container).find(elements)
@@ -923,9 +920,7 @@ function addElement(params) {
 	$(elements).unbind(event)
 	$(elements).on(event, function(evx) {
 
-	
 		var containerx = getContainerElement(this, params.container)
-		
 
 		switch (params.insertPosition) {
 
@@ -1237,8 +1232,6 @@ function addMessage(type, message) {
 
 function getHtmlElement(selector, index, parent) {
 
-
-
 	if (!!index && !!parent) {
 		return ($(parent).find(selector)).eq(index)
 	}
@@ -1298,13 +1291,4 @@ JSON.toCssString = function(jsonObject) {
 }
 
 // Added Mayo 30 2014 http://stackoverflow.com/a/6416527/597786
-/*
- * (function($) { $.fn.getStyleObject = function() { var dom = this.get(0); var style; var returns =
- * {}; if (window.getComputedStyle) { var camelize = function(a, b) { return b.toUpperCase(); };
- * style = window.getComputedStyle(dom, null); for ( var i = 0, l = style.length; i < l; i++) { var
- * prop = style[i]; var camel = prop.replace(/\-([a-z])/g, camelize); var val =
- * style.getPropertyValue(prop); returns[camel] = val; } ; return returns; } ; if (style =
- * dom.currentStyle) { for ( var prop in style) { returns[prop] = style[prop]; } ; return returns; } ;
- * return this.css(); } })(jQuery);
- *  // var styles = $(".hola").getStyleObject();
- */
+// LAST MODIFIED JUEVES 10 de JULIO Version 1.5.0 FINAL
