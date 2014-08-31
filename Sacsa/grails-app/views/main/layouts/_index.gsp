@@ -9,10 +9,11 @@
 	<g:render template="/main/index/clientes" />
 	<!-- /#blog-posts -->
 	<g:javascript>
-		setEqualHeight(".sacsa-trabajos-recientes-item .portfolio-thumb", true, true);
-		setEqualHeight(".sacsa-clients-logo", true, true);
-		
+	
+	$( document ).ready(function() {
+			setEqualHeight(".sacsa-trabajos-recientes-item .portfolio-thumb", true, true);
+			setEqualHeight(".sacsa-clients-logo", true, true);
+	});
 	</g:javascript>
 </div>
-<!-- /.main-wrapper -->	
-
+<!-- /.main-wrapper -->

@@ -232,6 +232,10 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'mx.vulcanosw.s
 grails.plugin.springsecurity.authority.className = 'mx.vulcanosw.security.Rol'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 
+
+	'/main/servicio':                     ['permitAll'],
+	'/servicio':                          ['permitAll'],
+	'/main/servicio/*':                     ['permitAll'],
 	'/servicio/*':                          ['permitAll'],
 	'/main/portafolio':                     ['permitAll'],
 	'/main/nosotros':                       ['permitAll'],
@@ -239,6 +243,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/main/empleo':                    		['permitAll'],
 	'/main/index':                          ['permitAll'],
 	'/main/contactoMail':                   ['permitAll'],
+	'/main/mail':                   ['permitAll'],
 	'/':                              		['permitAll'],
 //	'/main/index':                              		['permitAll'],
 //	'/main/index.gsp':                              	['permitAll'],

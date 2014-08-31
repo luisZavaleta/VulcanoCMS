@@ -120,9 +120,9 @@
 	</section>
 	<!-- /#releted-works -->
 	<g:javascript>
-	
+	$( document ).ready(function() {
 		setEqualHeight(".servicios-proyectos-carrusel-item-image", true, true);
-		
+	});
 	</g:javascript>
 	
 </div>

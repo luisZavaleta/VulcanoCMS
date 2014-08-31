@@ -1011,7 +1011,7 @@ class BootstrapHelper {
 
 
 			new Img(webpageId: webpageId, selector: ".sacsa-equipo-item-imagen", parentId:teamMember0.id,
-			src:"img/smiling-group/photo (1).jpg", relativePath: true).save(failOnError:true)
+			src:"img/smiling-group/photo1.jpg", relativePath: true).save(failOnError:true)
 			new H4(webpageId: webpageId, selector: ".sacsa-equipo-item-nombre", html:"Nombre director",
 			parentId:teamMember0.id).save(failOnError:true)
 			new Span(webpageId: webpageId, selector: ".sacsa-equipo-item-posicion", html:"Director general",
@@ -1021,7 +1021,7 @@ class BootstrapHelper {
 
 
 			new Img(webpageId: webpageId, selector: ".sacsa-equipo-item-imagen", parentId:teamMember1.id,
-			src:"img/smiling-group/photo (2).jpg", relativePath: true).save(failOnError:true)
+			src:"img/smiling-group/photo2.jpg", relativePath: true).save(failOnError:true)
 			new H4(webpageId: webpageId, selector: ".sacsa-equipo-item-nombre", html:"Nombre administrador",
 			parentId:teamMember1.id).save(failOnError:true)
 			new Span(webpageId: webpageId, selector: ".sacsa-equipo-item-posicion", html:"Jefe de servicios administrativos",
@@ -1031,7 +1031,7 @@ class BootstrapHelper {
 
 
 			new Img(webpageId: webpageId, selector: ".sacsa-equipo-item-imagen", parentId:teamMember2.id,
-			src:"img/smiling-group/photo (3).jpg", relativePath: true).save(failOnError:true)
+			src:"img/smiling-group/photo3.jpg", relativePath: true).save(failOnError:true)
 			new H4(webpageId: webpageId, selector: ".sacsa-equipo-item-nombre", html:"Nombre jefe de obras",
 			parentId:teamMember2.id).save(failOnError:true)
 			new Span(webpageId: webpageId, selector: ".sacsa-equipo-item-posicion", html:"Jefe de obras",

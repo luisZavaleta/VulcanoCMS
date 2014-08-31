@@ -222,7 +222,9 @@
 	<!-- /#our-clients -->
 </div>
 <g:javascript>
+$( document ).ready(function() {
 		setEqualHeight(".sacsa-equipo-item-descripcion", true)
 		modifyWidthInProgressBar()
+});
 </g:javascript>
 <!-- Custom Script For This Template -->

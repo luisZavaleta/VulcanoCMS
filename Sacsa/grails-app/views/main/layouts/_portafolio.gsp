@@ -55,9 +55,7 @@
 		<!-- /.container -->
 	</section>
 	<!-- /#portfolio-3 -->
-	<g:javascript>
-		//setEqualHeight(".sacsa-maquinaria-image", true, true);
-	</g:javascript>
+
 </div>
 <!-- /#utter-wrapper -->
 <!-- Bootstrap JS & Others JavaScript Plugins

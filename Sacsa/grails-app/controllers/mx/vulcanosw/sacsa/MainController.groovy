@@ -66,7 +66,7 @@ class MainController {
 
 		sendMail {
 			multipart true
-			to "luis@vulcanosw.mx"
+			to "sacsa.coatza@gmail.com"
 			subject "Envío de curriculum desde página web"
 			html mx.vulcanosw.sacsa.bootstrap.EmailHelper.getCorreoTexto(params.nombre, params.correo, params.titulo, params.mensaje)
 			if(params.upl != null){
@@ -91,7 +91,7 @@ class MainController {
 	def contactoMail(){
 
 		sendMail {
-			to "luis@vulcanosw.mx"
+			to "sacsa.coatza@gmail.com"
 			subject "Mensaje de cliente desde página web"
 			html mx.vulcanosw.sacsa.bootstrap.EmailHelper.getCorreoTexto(params.nombre, params.correo, params.titulo, params.mensaje)
 		}
@@ -102,4 +102,4 @@ class MainController {
 }
 
 
-//sacsa-carrusel-image-fondo defaultimg
+//our-clients
